@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listado de Reservas</h1>
+
+<table class="table table-bordered">
+  <thead>
+    <tr>
+      <th>Cliente</th>
+      <th>Mesa</th>
+      <th>Espectáculo</th>
+      <th>Fecha</th>
+      <th>Hora</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @reservas.each do |reserva| %>
+      <tr>
+        <td><%= reserva.cliente %></td>
+        <td><%= reserva.mesa %></td>
+        <td><%= reserva.espectaculo %></td>
+        <td><%= reserva.fecha %></td>
+        <td><%= reserva.hora %></td>
+        <td><%= link_to 'Detalles', reserva %></td>
+        <td><%= link_to 'Editar', edit_reserva_path(reserva) %></td>
+        <td><%= link_to 'Eliminar', reserva, method: :delete, data: { confirm: '¿Seguro?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'Nueva Reserva', new_reserva_path, :class => 'btn btn-sq' %>

@@ -1,0 +1,14 @@
+// Place all the styles related to the Users controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+#login-box {
+  width: 400px; height: 534px;
+  background: #ffffff;
+  border: 1px solid #c7d3dd;
+  position: relative;
+  margin: auto; top: 50%;
+  -ms-transform: translate(0, -50%);
+  -webkit-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  border-radius: 5px;
+}

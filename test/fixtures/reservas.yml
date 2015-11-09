@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  cliente: MyString
+  mesa: 1
+  espectaculo: MyString
+  fecha: 2015-11-09
+  hora: 2015-11-09 20:33:48
+
+two:
+  cliente: MyString
+  mesa: 1
+  espectaculo: MyString
+  fecha: 2015-11-09
+  hora: 2015-11-09 20:33:48

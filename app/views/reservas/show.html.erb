@@ -1,0 +1,31 @@
+<h1>Detalles de la reserva</h1>
+
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Cliente:</strong>
+  <%= @reserva.cliente %>
+</p>
+
+<p>
+  <strong>Mesa:</strong>
+  <%= @reserva.mesa %>
+</p>
+
+<p>
+  <strong>Espectáculo:</strong>
+  <%= @reserva.espectaculo %>
+</p>
+
+<p>
+  <strong>Fecha:</strong>
+  <%= @reserva.fecha %>
+</p>
+
+<p>
+  <strong>Hora:</strong>
+  <%= @reserva.hora %>
+</p>
+
+<%= link_to 'Editar', edit_reserva_path(@reserva), :class => 'btn btn-sq' %> |
+<%= link_to 'Devolverse', reservas_path, :class => 'btn btn-sq' %>

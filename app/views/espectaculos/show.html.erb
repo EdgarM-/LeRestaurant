@@ -1,0 +1,31 @@
+<h1>Detalles del espectáculo</h1>
+
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nombre:</strong>
+  <%= @espectaculo.nombre %>
+</p>
+
+<p>
+  <strong>Fecha:</strong>
+  <%= @espectaculo.fecha %>
+</p>
+
+<p>
+  <strong>Descripción:</strong>
+  <%= @espectaculo.descripcion %>
+</p>
+
+<p>
+  <strong>Inicio:</strong>
+  <%= @espectaculo.inicio %>
+</p>
+
+<p>
+  <strong>Fin:</strong>
+  <%= @espectaculo.fin %>
+</p>
+
+<%= link_to 'Editar', edit_espectaculo_path(@espectaculo), :class => 'btn btn-sq' %> |
+<%= link_to 'Devolverse', espectaculos_path, :class => 'btn btn-sq' %>

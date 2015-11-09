@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Restaurant</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<header class="container-fluid">
+  <div>
+    <h1>Le Restaurant</h1>
+    <nav>
+      <%= link_to 'Usuarios', users_path %>
+      <%= link_to 'Reservas', reservas_path %>
+      <%= link_to 'Espectáculos', espectaculos_path %>
+      <%= link_to 'Mesas', mesas_path %>
+    </nav>
+  </div>
+</header>
+
+<div class="main container">
+<%= yield %>
+</div>
+
+</body>
+</html>

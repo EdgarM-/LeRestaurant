@@ -1,0 +1,17 @@
+<h1>Editing User</h1>
+
+<%= form_for @user, class: "form-horizontal" do |f| %>
+		<div class="form-group">
+			<p> Username:</br> <%= f.text_field :name%> </p>
+            <p> Email:</br> <%= f.text_field :mail%> </p>
+            <p> Password:</br> <%= f.password_field :password%></p>
+            <p> Password Confirmation:</br> <%= f.password_field :password_confirmation%> </p>
+			<br><br>
+			<div class="actions">
+			<%=f.submit %>
+		</div>
+		<% end %>
+
+
+<%= link_to 'Detalles', @user, :class => 'btn btn-sq' %> |
+<%= link_to 'Devolverse', users_path, :class => 'btn btn-sq' %>

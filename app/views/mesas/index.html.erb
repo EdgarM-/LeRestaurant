@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listado de  Mesas</h1>
+
+<table class="table table-bordered">
+  <thead>
+    <tr>
+      <th>Número</th>
+      <th>Cantidad de personas</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @mesas.each do |mesa| %>
+      <tr>
+        <td><%= mesa.numero %></td>
+        <td><%= mesa.cantidadPersonas %></td>
+        <td><%= link_to 'Detalles', mesa %></td>
+        <td><%= link_to 'Editar', edit_mesa_path(mesa) %></td>
+        <td><%= link_to 'Eliminar', mesa, method: :delete, data: { confirm: '¿Seguro?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'Nueva Mesa', new_mesa_path, :class => 'btn btn-sq' %>

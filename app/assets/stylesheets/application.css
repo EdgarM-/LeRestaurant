@@ -1,0 +1,83 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+ 
+ body {
+     background-color: #CACACA;
+ }
+ 
+ header {
+    background: url(http://www.hiltonsanfranciscohotel.com/assets/images/mastheads/hotel_information/urban_tavern/urban-tavern-restaurant-cheval-room.jpg) no-repeat center center;
+    background-size: cover;
+    height: 600px;
+    text-align: center;
+ }
+ 
+ header div {
+    background-color: rgba(0,0,0,0.4);
+    border: 10px rgba(0,0,0,0.2) solid;
+    color: #EEE;
+    position: relative;
+    top: 25%;
+    padding: 20px 0 40px;
+ }
+ 
+ header h1 {
+    font-size: 120px;
+    margin: 30px;
+ }
+ 
+ header nav a {
+    border-right: 1px #999 solid;
+    border-left: 1px #999 solid;
+    color: inherit;
+    text-decoration: none;
+    padding: 10px;
+    margin: 0;
+    font-size: 1.5em;
+    display: inline-block;
+ }
+ 
+ header nav a:last-child {
+    border-right: none;
+ }
+ 
+ header nav a:first-child {
+    border-left: none;
+ }
+ 
+ header nav a:hover, header nav a:active {
+    background-color: #000;
+    color: inherit;
+    text-decoration: none;
+ }
+ 
+ .main {
+     background-color: #FFF;
+ }
+ 
+ .btn-sq {
+     border-radius: 0;
+     background-color: #000;
+     color: #FFF;
+     display: inline-block;
+     margin-bottom: 10px;
+     padding: 10px 20px;
+ }
+ 
+ .btn-sq:hover {
+     background-color: #4AF;
+ }
+ 

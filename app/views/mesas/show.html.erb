@@ -1,0 +1,15 @@
+<h1>Detalles de Mesa</h1>
+
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Número:</strong>
+  <%= @mesa.numero %>
+</p>
+<p>
+  <strong>Cantidad de Personas:</strong>
+  <%= @mesa.cantidadPersonas %>
+</p>
+
+<%= link_to 'Editar', edit_mesa_path(@mesa), :class => 'btn btn-sq' %> |
+<%= link_to 'Devolverse', mesas_path, :class => 'btn btn-sq' %>

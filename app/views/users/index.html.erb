@@ -1,0 +1,36 @@
+<% if notice %>
+<div id="notice"  class="alert alert-success">
+			<button class="close" type="button" data-dismiss="alert">x</button>
+			<strong><%= notice %></strong>
+</div>
+<% end %>
+
+<h1>Listado de usuarios</h1>
+
+<table class="table table-bordered">
+  <thead>
+    <tr>
+      <th>Nombre</th>
+      <th>Email</th>
+      <th>Ról</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @users.each do |user| %>
+      <tr>
+        <td><%= user.name %></td>
+        <td><%= user.mail %></td>
+        <td><%= user.rol ? 'Admin' : 'Cliente' %></td>
+        <td><%= link_to 'Detalles', user %></td>
+        <td><%= link_to 'Editar', edit_user_path(user) %></td>
+        <td><%= link_to 'Eliminar', user, method: :delete, data: { confirm: '¿Seguro?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'Nuevo Usuario', new_user_path, :class => 'btn btn-sq' %>
